@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(cover.jpg);/*background picture*/
+    background-size: auto;
+    font-family: sans-serif;
+}
+.logo{
+    /*logo adjustment */
+    text-align: center;
+    width: 130px;
+    height: 130px;
+    left: 46%;
+    right: 54%;
+    bottom: 83%;
+    position: absolute; 
+    
+}
+.loginbox{
+    margin-top: 57px;
+    text-align: center;
+    width: 350px;
+    height: 625px;
+    background-color: rgb(70, 139, 83);
+    top: 50%;
+    left: 50%;
+    opacity: 0.8;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 5%;
+}
+/*Color and hover color*/
+h2{
+    color: white;
+}
+.loginbox p{
+    color: white;
+}
+a:hover{
+    color: rgb(0, 255, 0);
+}
