@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Register Page</title>
+        <!--linking to register.css-->
+        <link rel="stylesheet" type="text/css" href="css/Register.css">
+        <body>
+            <img src="pictures/logo.png" class="logo">
+            <!--user's info-->
+            <div class ="loginbox">
+                <h2>Create an Agro Account</h2>
+                
+                <form action="register.php" method="post">
+                <p for="FullName">Full Name</p>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="FullName"
+                  name="FullName"
+                  placeholder="Enter Full Name"
+                />
+                <p for="Email">Email</p>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Email"
+                  name="Email"
+                  placeholder="Enter Email"
+                />
+                <p for="Password">Password</p>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="Password"
+                  name="Password"
+                  placeholder="Enter Password"
+                />
+                <p for="PhoneNumber">Phone Number</p>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="PhoneNumber"
+                  name="PhoneNumber"
+                  placeholder="Enter Phone number"
+                />
+                <p for="Address">Address</p>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Address"
+                  name="Address"
+                  placeholder="Enter Address"
+                />
+                <div class="Gender">
+                    <p>Gender</p>
+                    <label style="color: white;"><input type="radio" name="Gender" value="m" id="male">Male</label>
+                    <label style="color: white;"><input type="radio" name="Gender" value="f" id="female">Female</label>
+                    <label style="color: white;"><input type="radio" name="Gender" value="o" id="others">Other</label>
+                </div>
+                <p for="DateofBirth">Date of Birth</p>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="DateofBirth"
+                  name="DateofBirth"
+                />
+                <br>
+                <!--inline css-->
+                  <input style="width: 25%; margin-top: 10px;" type="submit" name="Register" value="Register">
+                  </form>
+                  <!--linking to login page-->
+                  <p>Already have an Account?  <b><a href="LoginPage.html">Log In</a></p></b>        
+            </div>
+        </body>
+    </head>
+</html>
