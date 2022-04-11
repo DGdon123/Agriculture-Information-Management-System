@@ -41,10 +41,7 @@ CREATE TABLE `registration` (
 
 LOCK TABLES `registration` WRITE;
 /*!40000 ALTER TABLE `registration` DISABLE KEYS */;
-INSERT INTO `registration` VALUES (1,'Prakhyat Gurung','dipeshgurung797@gmail.com','dipesh@123','9818611491','Chakrapath,Kathmandu','m','2001-07-17'),
-(2,'Binod Pandey','binod@gmail.com','binod@123','9861033219','Kupondole,Lalitpur','m','2006-01-04'),
-(3,'Gopal Gurung','gopal@gmail.com','gopal@123','9812335658','Jhamsikhel,Lalitpur','m','2000-10-27'),
-(4,'Shradhha Gurung','shradhha@gmail.com','shradha@123','9811486637','Lokanthali,Bhaktapur','f','1999-11-24');
+INSERT INTO `registration` VALUES (1,'Prakhyat Gurung','dipeshgurung797@gmail.com','dipesh@123','9818611491','Chakrapath,Kathmandu','m','2001-07-17'),(2,'Binod Pandey','binod@gmail.com','binod@123','9861033219','Kupondole,Lalitpur','m','2006-01-04'),(3,'Gopal Gurung','gopal@gmail.com','gopal@123','9812335658','Jhamsikhel,Lalitpur','m','2000-10-27'),(4,'Shradhha Gurung','shradhha@gmail.com','shradha@123','9811486637','Lokanthali,Bhaktapur','f','1999-11-24');
 /*!40000 ALTER TABLE `registration` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
