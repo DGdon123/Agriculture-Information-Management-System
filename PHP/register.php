@@ -7,12 +7,17 @@
 	$Gender = $_POST['Gender'];
     $DateofBirth = $_POST['DateofBirth'];
 
-	// Database connection
+	//Establishing connection of database
 	$conn = new mysqli('localhost','root','','register');
-	if($conn->connect_error){
+	//Using if statement to check ($conn->connect_error)
+	if($conn->connect_error)
+	{
 		echo "$conn->connect_error";
+		//Using die function to exit from the program
 		die("Connection Failed : ". $conn->connect_error);
-	} else {
+	} 
+	else
+	{
 		$stmt = $conn->prepare("insert into registration(FullName, Email, Password, PhoneNumber, Address, Gender, DateofBirth) values(?, ?, ?, ?, ?, ?, ?)");
 		$stmt->bind_param("sssssss", $FullName, $Email, $Password, $PhoneNumber, $Address, $Gender, $DateofBirth);
 		$execval = $stmt->execute();
