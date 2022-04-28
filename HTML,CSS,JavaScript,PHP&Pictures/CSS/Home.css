@@ -5,15 +5,17 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+body{
+    background: linear-gradient(rgba(0,0,0,0.5), rgb(13, 232, 64) );
 
+}
 .header{
     width: 100%;
     height: 100px;
     display: block;
     border: 1px solid black;
-    background-color: aqua;
+    background: linear-gradient(rgba(0,0,0,0.5), rgb(84, 242, 5) );
 }
-
 .logo{
     height: 60px;
 }
@@ -22,34 +24,41 @@
     margin-top: -40px;
 
 }
-.nav{
+.navga{
     float: left;
+    margin: 2px;
    
 }
-.nav li{
+.navga li{
     display: inline;
     justify-content: flex-start;
     padding: 10px;
+    color: white;
     border-right: 1px solid black;
 }
-.nav li:last-child{
+.navga li:last-child{
     border-right: none;
+}
+.navga a:hover{
+    color: rgb(30, 0, 255);
 }
 .round{
     margin-top: 9px;
     margin-left: 60px;
     border-radius: 5px;
+    border: 2px solid black;
 }
 .left-side{
     float: right;
     height: 50%;
-    margin-top: -40px;
+    margin-top: -20px;
 }
+
 
 .banner{
     width: 100%;
     height: 50h;
-    background: rgb(240, 247, 243);
+    
     overflow: hidden;
 }
 .banner .carsoul{
@@ -62,76 +71,243 @@
     height: 50vh;
 }
 
-.third-pic{
-    
-    overflow: right;
-    width:100%;
-    border-radius:10px;
-    height:300px;
-    background-color: gray;
-}
-.para{
-    width:50%;
-    height:auto;
-    float:left;
-    font-size:24px;
-
-}
-.image1{
-    float:right;
-    width:40%;
-    border-radius:10px;
-}
 .footer-content{
     text-align: center;
     justify-content: baseline;
     padding: auto;
 }
-/*Footer
-footer{
-    background: aqua;
-    height: 200px;
-    width: 100vw;
-    padding-top: 40px;
-    color: aliceblue;   
+/* 2nd Body- part*/
+.body-wrapper{
+    height: 450px;
+    display: inline;
 }
-.footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.body-wrapper h1{
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.update-pic{
+    margin-top: 30px;
+    margin-left: 500px;
+}
+.updating-pic{ 
+    height: 300px;
+    width: 550px;
+    border-radius: 10px;
+}
+.main-update-text{
+    height: 80px;
+}
+.update-text {
+    align-content: justify;
+    text-align: center;
+    width: 650px;
+    color: rgb(192, 185, 185);
+    margin-left: 430px;
+}
+.body-wrapper button{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px 20px;
+    margin: 11px;
+    background-color: rgb(109, 234, 128);
+    
+}
+.body-wrapper button:hover{
+    background-color: rgb(71, 19, 240);
+    transition: .5s;
+    box-shadow: 2px 2px 10px black;
+    color: white;
+}
+.buy-button{
+    margin-left: 700px;
+}
+
+/* Products*/
+.product{
+    margin-top: 60px;
+}
+.main-title{
+    color: white;
+    margin-left: 700px;
+    padding: 10px;
+    
+}
+.cards{
+    width: 20%;
+    display: inline-block;
+    background-color: grey;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 30px;
+    transition: 1s;
+}
+.cards:hover{
+    box-shadow: 2px 2px 10px black;
+}
+.image img{
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 1px solid black;
+}
+.title{
     text-align: center;
 }
-.footer-content h3{
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
+.des{
+    text-align: center;
+    padding: 4px;
 }
-.footer-content p{
-    max-width: 500px;
-    margin: 10px;
-    line-height: 28px;
-    font-size: 14px;
+.cards button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
-.socials{
-    list-style: none;
+.cards button:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+
+}
+
+.main-sec section{
+    padding: 10rem 0;
+    background-color: #fff;
+}
+.heading{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    margin-bottom: 5rem;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+.heading::after{
+    content: "";
+    width: 10rem;
+    height: .8rem;
+    background-color: #45e19f;
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+}
+.card-wrapper{
     display: flex;
     align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+.card{
+    width: 32rem;
+    background-color: #ebeef8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin: 1rem 0 3 rem 0;
+    margin: 2rem 0;
+    box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
 }
-.socials li{
-    margin: 0 10px;
+.card .card-img{
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
 }
-socials a{
-    text-decoration: none;
-    color: aliceblue;
+.profile-img{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -11rem;
+    z-index: 999;
+    border: 1rem solid #ebeef8;
 }
-.socials a i{
-    font-size: 1.1rem;
+.card h1{
+    font-size: 2.5rem;
+    color: #333;
+    margin: 1.5rem 0;
 }
-.socials a:hover i{
-    color: aqua;
+.job-title{
+    color: #777;
+    font-size: 1.5rem;
+    font-weight: 300;
 }
-*/
+.about{
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    text-align: center;
+    color:#333
+}
+.card .btn{
+    padding: 1rem 2.5rem;
+    background-color: #445ae3;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color: #eee;
+    font-size: 1.4rem;
+}
+.card .btn:hover{
+    transform: translateY(0);
+    box-shadow: none;
+}
+.social-media{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+    border-top: 1px solid black;
+}
+.social-media i{
+    font-size: 3rem;
+}
+.fa-facebook-square{
+    color: #3b5999;
+}
+.fa-twitter-square{
+    color: #55acee;
+}
+.fa-instagram{
+    color: #e6683c;
+}
+
+.fa-facebook-square:hover
+.fa-twitter-square:hover
+.fa-instagram:hover{
+    color: #45e19f;
+}
+@media screen and (min-width: 700px){
+    .card-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        margin: 2rem;
+    }
+    @keyframes fadeIn{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+        .card:nth-child(1){
+            
+        }
+    }
+}
+
+
