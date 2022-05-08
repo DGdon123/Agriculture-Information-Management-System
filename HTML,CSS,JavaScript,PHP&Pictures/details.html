@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!--Home Page Header-->
     <header>
         <div class="header">
         <div class="h-log">
@@ -25,35 +26,33 @@
                         <a href="#product">Products</a>
                     </li>
                     <li>
-                        <a href="details.html">Details</a>
+                        <a href="details.html">Farmer Details</a>
                     </li>
                     <li>
-                        <a href="#heading">About Us</a>
+                        <a href="#section-team">Our Team</a>
                     </li>
                     <li>
-                        <a href="help.html">Help</a>
-                    </li>
-                    <li>
-                        <input class="round" type="search" placeholder="Search">
+                        <a href="help.html">Contact Us</a>
                     </li>
                 </ul>            
             </div>
         </div>
-        </header>
+    </header>
         <!--Header- Side Navigation Bar-->
     <div id="sideNav">
         <nav>
             <ul>
-                <li><a href="#">My Profile</li>
-                <li><a href="#">Home</li>
-                <li><a href="#">Products</li>
-                <li><a href="#">Details</li>
-                <li><a href="#">Log Out</li>
+                <li><a href="user.html">My Profile</li>
+                <li><a href="home.html">Home</li>
+                <li><a href="#">Farmer Details</li>
+                <li><a href="#section.team">Our Team</li>
+                <li><a href="LoginPage.html">Log Out</li>
             </ul>
         </nav>
     </div>
     <div id="menubtn">
-        <img src="Pictures/user.png" id="menu">
+        <a href="user.html">
+        <img src="Pictures/user.png" id="menu"></a>
     </div>
 <script>
         var menubtn = document.getElementById("menubtn")
@@ -69,5 +68,31 @@
         }
 
 </script>
+
+<table>
+    <caption>User List</caption>
+      <tr>
+        <th>Full Name </th>
+        <th>Email </th>
+        <th>Phone Number</th>
+        <th>Province</th>
+        <th>Ward Number</th>
+        <th>Family Members</th>
+        <th>Crops Name </th>
+        <th>Password</th>
+        <th>Action</th>
+      </tr>
+      <tr>
+          <td>Prakhyat Thapa Magar</td>
+          <td>prakhyat@gmail.com</td>
+          <td>9869118150</td>
+          <td>3</td>
+          <td>4</td>
+          <td>4</td>
+          <td>Rice</td>
+          <td>superhotfire</td>
+          <td>Delete</td>
+      </tr>
+  </table>
 </body>
 </html>
