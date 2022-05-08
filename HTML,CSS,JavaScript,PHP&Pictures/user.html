@@ -5,9 +5,74 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css/user.css">
 </head>
 <body>
-  <h1>My Profile</h1>
-  
+  <div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="user.html">My Profile</li>
+            <li><a href="home.html">Home</li>
+            <li><a href="LoginPage.html">Log Out</li>
+        </ul>
+    </nav>
+</div>
+<div id="menubtn">
+    <a href="user.html">
+    <img src="Pictures/user.png" id="menu"></a>
+</div>
+<script>
+    var menubtn = document.getElementById("menubtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+    menubtn.onclick =function(){
+        if(sideNav.style.right =="-250px"){
+            sideNav.style.right = "0";
+        }
+        else{
+            sideNav.style.right ="-250px";
+        }
+    }
+</script>
+<center>
+  <div class="form">
+    <h2>Update Information</h2>
+    <form action="">
+      <label>Full Name:</label>
+      <input type="text" placeholder="Enter FullName" required>
+
+      <label>Email:</label>
+      <input type="text" placeholder="Enter Email" required>
+
+      <label>Mobile Number:</label>
+      <input type="text" placeholder="Enter Mobile Number" required>
+
+      <label>Province:</label>
+      <input type="text" placeholder="Enter Province" required>
+
+      <label>Ward No:</label>
+      <input type="text" placeholder="Enter Ward Number" required>
+
+      <label>Family Members:</label>
+      <input type="text" placeholder="Family Number" required>
+
+      <label>Crops Name:</label>
+      <input type="text" placeholder="Enter Crops Name" required>
+
+      <label>Farmers Rate:</label>
+      <input type="text" placeholder="Farmers Rate" required>
+
+      <label>Market Rate:</label>
+      <input type="text" placeholder="Market Rate" required>
+
+      <label>Password:</label>
+      <input type="text" placeholder="Enter Password" >
+
+      <center>
+        <input type="button" value="Update" id="submit">
+      </center>
+    </form>
+  </div>
+  </center>
 </body>
 </html>
