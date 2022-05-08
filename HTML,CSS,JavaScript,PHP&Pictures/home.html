@@ -3,57 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--Home Page Header <link rel="stylesheet" href="https://use.fontawesome.com/realeases/v5.6.3/css/all.css">-->
     <link rel="stylesheet" type="text/css" href="css/Home.css">
     <link rel="stylesheet" href="jquery.flipster.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agriculture Information Management System</title>
+    <link 
+  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
 </head>
 <body>
     <!--Home Page Header-->
     <header>
-    <div class="header">
-    <div class="h-log">
-        <img src="pictures/logo.png" class="logo">
-       <h4 class="tex"><b>Life is Short Play in Dirt</b></h4>
-    </div>
-    <!--
+        <div class="header">
+        <div class="h-log">
+            <img src="pictures/logo.png" class="logo">
+           <h4 class="tex"><b>Life is Short Play in Dirt</b></h4>
+        </div>
+        <br>
+        <!--header's Navigation-->
+            <div class="navga">
+                <ul>
+                    <li>
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#product">Products</a>
+                    </li>
+                    <li>
+                        <a href="details.html">Details</a>
+                    </li>
+                    <li>
+                        <a href="#heading">About Us</a>
+                    </li>
+                    <li>
+                        <a href="help.html">Help</a>
+                    </li>
+                </ul>            
+            </div>
+        </div>
+    </header>
+        <!--Header- Side Navigation Bar-->
     <div id="sideNav">
         <nav>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Log Out</a></li>
-        </nav>
-    </div>-->
-    <a href="">
-        <img src="pictures/user.png" class="left-side">
-    </a>
-    <a href="http://localhost/login.php/"></a>
-    <br>
-    <!--header's Navigation-->
-        <div class="navga">
             <ul>
-                <li>
-                    <a href="home.html">Home</a>
-                </li>
-                <li>
-                    <a href="Products.html">Products</a>
-                </li>
-                <li>
-                    <a href="Details.html">Details</a>
-                </li>
-                <li>
-                    <a href="Aboutus.html">About Us</a>
-                </li>
-                <li>
-                    <a href="help.html">Help</a>
-                </li>
-                <li>
-                    <input class="round" type="search" placeholder="Search">
-                </li>
-            </ul>            
-        </div>
+                <li><a href="#">My Profile</li>
+                <li><a href="#">Home</li>
+                <li><a href="#">Products</li>
+                <li><a href="#">Details</li>
+                <li><a href="#">Log Out</li>
+            </ul>
+        </nav>
     </div>
-    </header>
+    <div id="menubtn">
+        <a href="user.html">
+        <img src="Pictures/user.png" id="menu"></a>
+    </div>
+<script>
+        var menubtn = document.getElementById("menubtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+        menubtn.onclick =function(){
+            if(sideNav.style.right =="-250px"){
+                sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right ="-250px";
+            }
+        }
+
+</script>
     <!--Body for slider-->
     <section>
     <div class="banner">
@@ -102,7 +120,7 @@
     </script>
     </section>
     <!--2nd body -->
-      <section>
+    <section>
         <div class="body-wrapper">
             <h1>Cheapest Rice Crops of this Week<br>At only $1 per pound.</h1>
             <div class="update-pic">
@@ -119,10 +137,10 @@
             </div>
             </ul>
         </div> 
-      </section>
-      <!--Products-->
-      <section>
-          <div class="product">
+    </section>
+    <!--Products-->
+    <section>
+          <div id="product">
               <h2 class="main-title">Products</h2>
             <div class="cards">
                 <div class="image">
@@ -222,76 +240,90 @@
             </div>
             
         </div> 
-      </section>
-      <!--About US-->
-      <div class="main-sec">
-      <section>
-        <div class="Container">
-            <h1 class="heading">About Us</h1>
-            <div class="card-wrapper">
-                <div class="card">
-                    <img src="Pictures/rice.jpg" alt="card background" class="card-img"> 
-                    <img src="Pictures/nitesh.jpg" alt="profile image" class="profile-img">
-                    <h1>Nitesh Barman</h1> 
-                    <p class="job-title">Project Manager</p>
-                    <p class="about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, accusamus voluptatem sequi voluptate sit amet dolor. Modi illum quisquam totam quibusdam, ullam perferendis corrupti eligendi iusto officia similique omnis eos?</p>
-                    <a href="https://www.facebook.com/profile.php?id=100009115118337" class="btn">Contact</a>
-                    <ul class="social-media">
-                        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
-                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fab fa-goodle-plus.square"></i></a></li>
-                    </ul>
+    </section>
+    <!--About US-->
+    <div class="team-section">
+        <div class="container-team">
+            <div class="row">
+                <div class="section-title text-container">
+                    <h1>Our Team</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eius ut accusantium, quidem dignissimos fuga reprehenderit vel </p>
                 </div>
-                
-                <div class="card">
-                    <img src="Pictures/rice.jpg" alt="card background" class="card-img"> 
-                    <img src="Pictures/nitesh.jpg" alt="profile image" class="profile-img">
-                    <h1>Sahan Shrestha</h1> 
-                    <p class="job-title">Business Analyst</p>
-                    <p class="about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, accusamus voluptatem sequi voluptate sit amet dolor. Modi illum quisquam totam quibusdam, ullam perferendis corrupti eligendi iusto officia similique omnis eos?</p>
-                    <a href="https://www.facebook.com/profile.php?id=100009174687091" class="btn">Contact</a>
-                    <ul class="social-media">
-                        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
-                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fab fa-goodle-plus.square"></i></a></li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <img src="Pictures/rice.jpg" alt="card background" class="card-img"> 
-                    <img src="Pictures/prakhyat.jpg" alt="profile image" class="profile-img">
-                    <h1>Prakhyat Gurung</h1> 
-                    <p class="job-title">Developer</p>
-                    <p class="about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, accusamus voluptatem sequi voluptate sit amet dolor. Modi illum quisquam totam quibusdam, ullam perferendis corrupti eligendi iusto officia similique omnis eos?</p>
-                    <a href="https://www.facebook.com/dipesh.gurung.31586526" class="btn">Contact</a>
-                    <ul class="social-media">
-                        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
-                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fab fa-goodle-plus.square"></i></a></li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <img src="Pictures/rice.jpg" alt="card background" class="card-img"> 
-                    <img src="Pictures/diperson.jpg" alt="profile image" class="profile-img">
-                    <h1>Diperson Maharjan</h1> 
-                    <p class="job-title">Developer</p>
-                    <p class="about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, accusamus voluptatem sequi voluptate sit amet dolor. Modi illum quisquam totam quibusdam, ullam perferendis corrupti eligendi iusto officia similique omnis eos?</p>
-                    <a href="facebook.com/bikesh.shrestha.790" class="btn">Contact</a>
-                    <ul class="social-media">
-                        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
-                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fab fa-goodle-plus.square"></i></a></li>
-                    </ul>
+            </div>
+            <div class="row">
+                <div class="team-items">
+                    <div class="item">
+                        <img src="pictures/nitesh.jpg" alt="team">
+                        <div class="inner">
+                            <div class="info">
+                                <h5>Nitesh Barman</h5>
+                                <p>Project Manager</p>
+                                <div class="social-links">
+                                    <a href=""><span class="fa fa-facebook"></span></a>
+                                    <a href=""><span class="fa fa-twitter"></span></a>
+                                    <a href=""><span class="fa fa-linkedin"></span></a>
+                                    <a href=""><span class="fa fa-youtube"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="pictures/sahan.jpg" alt="team">
+                        <div class="inner">
+                            <div class="info">
+                                <h5>Sahan Shrestha</h5>
+                                <p>Business Analytics</p>
+                                <div class="social-links">
+                                    <a href=""><span class="fa fa-facebook"></span></a>
+                                    <a href=""><span class="fa fa-twitter"></span></a>
+                                    <a href=""><span class="fa fa-linkedin"></span></a>
+                                    <a href=""><span class="fa fa-youtube"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="pictures/prakhyat.jpg" alt="team">
+                        <div class="inner">
+                            <div class="info">
+                                <h5>Prakhyat Gurung</h5>
+                                <p>Developer</p>
+                                <div class="social-links">
+                                    <a href=""><span class="fa fa-facebook"></span></a>
+                                    <a href=""><span class="fa fa-twitter"></span></a>
+                                    <a href=""><span class="fa fa-linkedin"></span></a>
+                                    <a href=""><span class="fa fa-youtube"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="pictures/diperson.jpg" alt="team">
+                        <div class="inner">
+                            <div class="info">
+                                <h5>Diperson Maharjan</h5>
+                                <p>Developer</p>
+                                <div class="social-links">
+                                    <a href=""><span class="fa fa-facebook"></span></a>
+                                    <a href=""><span class="fa fa-twitter"></span></a>
+                                    <a href=""><span class="fa fa-linkedin"></span></a>
+                                    <a href=""><span class="fa fa-youtube"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-      </section>
-</div>
+    </div>
+    <!--Contact Us-->
+<footer class="foot">
+    <img src="Pictures/logo.png">
+    <div>
+        <p class="foot-right"><b>Life is short Play in Dirt</b> | @2020 Argo</p>
+    </div>
+</footer>
+
       <!--Footer Section-->
 
 </body>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/deatils.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+        <div class="h-log">
+            <img src="pictures/logo.png" class="logo">
+           <h4 class="tex"><b>Life is Short Play in Dirt</b></h4>
+        </div>
+        <br>
+        <!--header's Navigation-->
+            <div class="navga">
+                <ul>
+                    <li>
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#product">Products</a>
+                    </li>
+                    <li>
+                        <a href="details.html">Details</a>
+                    </li>
+                    <li>
+                        <a href="#heading">About Us</a>
+                    </li>
+                    <li>
+                        <a href="help.html">Help</a>
+                    </li>
+                    <li>
+                        <input class="round" type="search" placeholder="Search">
+                    </li>
+                </ul>            
+            </div>
+        </div>
+        </header>
+        <!--Header- Side Navigation Bar-->
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">My Profile</li>
+                <li><a href="#">Home</li>
+                <li><a href="#">Products</li>
+                <li><a href="#">Details</li>
+                <li><a href="#">Log Out</li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="Pictures/user.png" id="menu">
+    </div>
+<script>
+        var menubtn = document.getElementById("menubtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+        menubtn.onclick =function(){
+            if(sideNav.style.right =="-250px"){
+                sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right ="-250px";
+            }
+        }
+
+</script>
+</body>
+</html>
