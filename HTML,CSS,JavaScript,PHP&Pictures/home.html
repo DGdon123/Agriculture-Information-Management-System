@@ -49,7 +49,7 @@
                 <li><a href="user.html">My Profile</li>
                 <li><a href="home.html">Home</li>
                 <li><a href="details.html">Farmer Details</li>
-                <li><a href="#section.team">Our Team</li>
+                <li><a href="#section-team">Our Team</li>
                 <li><a href="LoginPage.html">Log Out</li>
             </ul>
         </nav>
@@ -59,19 +59,21 @@
         <img src="Pictures/user.png" id="menu"></a>
     </div>
 <script>
+        // Assigning id values to variables. 
         var menubtn = document.getElementById("menubtn")
         var sideNav = document.getElementById("sideNav")
         var menu = document.getElementById("menu")
+        //Actions if click
         menubtn.onclick =function(){
-            if(sideNav.style.right =="-250px"){
+            if(sideNav.style.right =="-250px"){ //condition for side navgiation to appear
                 sideNav.style.right = "0";
             }
             else{
                 sideNav.style.right ="-250px";
             }
         }
-
 </script>
+
     <!--Body for slider-->
     <section>
     <div class="banner">
@@ -142,12 +144,13 @@
     </section>
     <!--Products-->
     <section>
-          <div id="product">
+          <div id="product"> <!--Seperate Section-->
               <h2 class="main-title">Products</h2>
-            <div class="cards">
-                <div class="image">
+            <div class="cards"> <!--Card box-->
+                <div class="image"><!--Img Section-->
                         <img src="pictures/tomato.jpeg">
                 </div>
+                <!--Description -->
                 <div class="title">
                 <h1>Tomato</h1>
                 </div>
@@ -156,6 +159,7 @@
                     <button onclick="window.location.href='https://en.wikipedia.org/wiki/Tomato'">View</button>
                 </div>  
             </div>
+            <!--Card box-->
             <div class="cards">
                 <div class="image">
                         <img src="pictures/millet.jpeg">
@@ -168,6 +172,7 @@
                     <button onclick="window.location.href='https://en.wikipedia.org/wiki/Millet'">View</button>
                 </div>  
             </div>
+            <!--Card box-->
             <div class="cards">
                 <div class="image">
                         <img src="pictures/soybean.jpeg">
@@ -180,6 +185,7 @@
                     <button onclick="window.location.href='https://en.wikipedia.org/wiki/Soybean'">View</button>
                 </div>  
             </div>
+            <!--Card box-->
             <div class="cards">
                 <div class="image">
                         <img src="pictures/potato.jpeg">
@@ -300,6 +306,7 @@
             </div>
             <div class="row">
                 <div class="team-items">
+                    <!--First Box-->
                     <div class="item">
                         <img src="pictures/nitesh.jpg" alt="team">
                         <div class="inner">
@@ -315,6 +322,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--Second Box-->
                     <div class="item">
                         <img src="pictures/sahan.jpg" alt="team">
                         <div class="inner">
@@ -330,6 +338,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--Third Box-->
                     <div class="item">
                         <img src="pictures/prakhyat.jpg" alt="team">
                         <div class="inner">
@@ -345,6 +354,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--Fourth Box-->
                     <div class="item">
                         <img src="pictures/diperson.jpg" alt="team">
                         <div class="inner">
@@ -368,10 +378,10 @@
     <div id="contact-section">
         <h1>Contact Us</h1>
         <form class="contact-form">
-            <input type="text" class="contact-form-text" placeholder="Your Name">
-            <input type="email" class="contact-form-text" placeholder="Your Email">
+            <input type="text" class="contact-form-text" placeholder="Your Name"><!--Name-->
+            <input type="email" class="contact-form-text" placeholder="Your Email"><!--Email-->
 
-            <textarea class="contact-form-text" placeholder="Your Message"></textarea>
+            <textarea class="contact-form-text" placeholder="Your Message"></textarea> <!--Query-->
             <input type="submit" id="contact-form-btn" value="Send">
             <div class="content">
                 <div class="header-pop">
