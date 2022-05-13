@@ -2,7 +2,7 @@
     $host = "localhost";  
     $user = "root";  
     $password = '';  
-    $db_name = "farmer_details";  
+    $db_name = "register";  
       
     //Connecting to mysql database using the mysqli_connect function
     $connect = mysqli_connect($host, $user, $password, $db_name);  

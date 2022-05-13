@@ -22,7 +22,9 @@
 		$stmt->bind_param("sssssss", $FullName, $Email, $Password, $PhoneNumber, $Address, $Gender, $DateofBirth);
 		$execval = $stmt->execute();
 		echo $execval;
-		echo "Registration successfully...";
+		echo '<script type="text/JavaScript"> 
+		window.location = "LoginPage.html" 
+		</script>';
 		$stmt->close();
 		$conn->close();
 	}

@@ -20,9 +20,11 @@
 	else
 	{	
         // database insert SQL code
-        $sql = "INSERT INTO `update` (`FullName`, `Email`, `PhoneNumber`, `Province`, `WardNo`, `FamilyMembers`, `CropsName`, `Password`) VALUES ('$FullName', '$Email', '$PhoneNumber', '$Province', '$WardNo', '$FamilyMembers', '$CropsName', '$Password')";
+        $sql = "INSERT INTO `updates` (`FullName`, `Email`, `PhoneNumber`, `Province`, `WardNo`, `FamilyMembers`, `CropsName`, `Passwords`) VALUES ('$FullName', '$Email', '$PhoneNumber', '$Province', '$WardNo', '$FamilyMembers', '$CropsName', '$Password')";
         // insert in database 
         mysqli_query($conn, $sql);
-        echo "Update successfully...";
+        echo '<script type="text/JavaScript"> 
+		window.location = "adhome.html" 
+		</script>';
 	}
 ?>

@@ -18,7 +18,7 @@
         if($count == 1)
         {  
             echo '<script type="text/JavaScript"> 
-            window.location = "home.html" 
+            window.location = "adhome.html" 
             </script>'
             ;
         }  
