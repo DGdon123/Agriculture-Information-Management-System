@@ -25,7 +25,7 @@
         else
         {  
             echo "
-            <script>alert('Login Failed!! Invalid Email or Password.')</script>
+            <script>alert('Login Failed!! Invalid UserName or Password.')</script>
             <script> 
             window.location = 'Adminlog.html' 
             </script>"
